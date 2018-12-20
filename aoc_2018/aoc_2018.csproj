@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88F1FD95-8DB9-4E8A-819C-39B3B79E03BA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>aoc_2018</RootNamespace>
+    <AssemblyName>aoc_2018</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aoc_2018_d10_a.cs" />
+    <Compile Include="aoc_2018_d1_a.cs" />
+    <Compile Include="aoc_2018_d1_b.cs" />
+    <Compile Include="aoc_2018_d2_a.cs" />
+    <Compile Include="aoc_2018_d2_b.cs" />
+    <Compile Include="aoc_2018_d3_a.cs" />
+    <Compile Include="aoc_2018_d3_b.cs" />
+    <Compile Include="aoc_2018_d4_a.cs" />
+    <Compile Include="aoc_2018_d4_b.cs" />
+    <Compile Include="aoc_2018_d5_a.cs" />
+    <Compile Include="aoc_2018_d5_b.cs" />
+    <Compile Include="aoc_2018_d6_a.cs" />
+    <Compile Include="aoc_2018_d7_a.cs" />
+    <Compile Include="aoc_2018_d7_b.cs" />
+    <Compile Include="aoc_2018_d8_a.cs" />
+    <Compile Include="aoc_2018_d8_b.cs" />
+    <Compile Include="aoc_2018_d9_a_b.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
